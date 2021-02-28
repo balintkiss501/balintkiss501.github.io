@@ -1,0 +1,155 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+
+% moderncv themes
+\moderncvstyle{classic}
+\moderncvcolor{orange}
+
+% character encoding
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+\setlength{\hintscolumnwidth}{3cm}
+
+\pagestyle{fancy}
+\rfoot{\thepage\ / 2}
+
+% personal data
+\name{Bálint}{Kiss}
+\title{Résumé}
+\address{Budapest, Hungary}
+\email{balint.kiss.501@gmail.com}
+\homepage{balintkiss501.github.io}
+\social[linkedin]{balintkiss501}
+\social[github]{balintkiss501}
+
+\photo[80pt][0.4pt]{balint_kiss_profile.jpg}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Professional Experience}
+\cventry{November 2017 -\\Present}{Software Engineer (C++)}{evosoft Hungary Ltd.}{Budapest}{}{
+		\begin{itemize}
+		\item Participation in the development of a machine error diagnostic software for the Siemens SINUMERIK system plaftorm in the field of industrial automation
+		\item Designing, implementing and maintaining the dynamic plugin handling architecture of the software and creating the plugins themselves
+		\item Programming using C++11/14 with Qt 5 and Win32 API
+		\item Architecture documentation and UML diagram creation
+		\item Introduce BDD testing into the project with Python
+		\item Unit test development with Qt Test and Google Mock
+		\item Taking responsibility in improving the workflow process and introducing tools in the team
+		\item Build engineering and release management
+		\item Maintenance of automation scripts written in Bash, Tcl, Perl and Python
+	\end{itemize}	
+}
+\cventry{January 2017 -\\November 2017}{Junior Software Engineer (C++)}{evosoft Hungary Ltd.}{Budapest}{}{}
+
+\cventry{July 2015 -\\August 2016}{Software Intern (Java)}{GE Healthcare}{Budapest}{}{
+	\begin{itemize}
+		\item Participation in the development of a cloud-based medical imaging software
+		\item Development of microservices in Java with Spring Framework
+		\item Participation in an agile software development process (Scaled Agile Framework, SAFE)
+		\item Unit test development with JUnit and Mockito
+		\item BDD test development with JBehave and Selenium
+		\item Member of our division's "DevOps Guild", maintaining applications deployed to Cloud Foundry cloud environment, virtualization with Docker
+	\end{itemize}
+}
+
+\cventry{June 2013 -\\January 2015}{Research Assistant (Java, R)}{University of West Hungary, Institute of Informatics and Economics}{Sopron}{}{
+	\begin{itemize}
+		\item Development of an analytic logic module for a data analytic framework using Java
+		\item Implementation of a scientific data analytic process using R statistical programming language and RapidMiner data science platform
+		\item RapidMiner plugin creation in Java
+		\item Interfacing RapidMiner with our Java data analytic framework
+		\item Apache Tomcat web server administration and programming with Servlet API
+		\item Administration of a virtual Debian server running in cloud environment
+		\item MongoDB NoSQL database administration
+	\end{itemize}
+}
+
+\section{Education}
+\cventry{2015 February -\\2017 June}{Master of Science (MSc), Computer Science -- Software Technology specialization}{Eötvös Loránd University, Faculty of Informatics}{}{\textit{Budapest}}
+{}
+\cventry{2011 September -\\2015 January}{Bachelor of Science (BSc), Business Informatics Engineer -- Software Development specialization}{University of West Hungary, Simonyi Károly Faculty of Engineering, Wood Sciences and Applied Arts}{}{\textit{Sopron}}
+{}
+
+\section{Technical skills}
+\cvitem{Programming languages}{\textbf{C++, Java}}
+\cvitem{Scripting languages}{\textbf{Bash, Tcl, Perl, Python, R}}
+\cvitem{C++-related technologies}{\textbf{C++11/14, STL, Win32 API, Make, CMake, Qt 5, Google Test and Google Mock, SDL2, GLFW}}
+\cvitem{Java-related technologies}{\textbf{Spring Framework, Servlet API, JUnit, Mockito, JBehave}}
+\cvitem{Version control}{\textbf{Git, Perforce, ClearCase}}
+\cvitem{Database systems}{\textbf{MySQL, PL/SQL, MongoDB, Redis}}
+\cvitem{Operating systems}{\textbf{Microsoft Windows (98/XP/7/10), Linux (Ubuntu, Debian, Red Hat, Fedora), Solaris}}
+\cvitem{Tools}{\textbf{GDB, Doxygen, ClangFormat, Clang-Tidy, Travis CI, AppVeyor}}
+
+\section{Foreign languages}
+\cvitem{Hungarian}{\textbf{Native language}}
+\cvitem{English}{\textbf{Fluent speaking and writing ("C1")}}
+\cvitem{German}{\textbf{Basic ("A2")}}
+
+\section{Other skills}
+\begin{itemize}
+	\item Library API design, knowledge of Design Patterns, Anti-patterns and UML
+	\item Interest for new technologies, continous self-education
+	\item Quick learning
+	\item Very good analytical skills
+	\item Attention, precision
+	\item Ability to work alone as well as in a Scrum team
+	\item Presentation skills
+	\item Hobbies and interests: reading fictional and IT books, studying game development techniques and working on game-programming related side projects
+\end{itemize}
+
+\section{Certifications}
+\cventry{June 2018}{ISTQB Certified Tester Foundation Level}{International Software Testing Qualifications Board}{License H18062937/CTFL}{}{
+}
+
+\section{Academic achievements}
+\cvitemwithcomment{Publications}{}{
+\begin{itemize}
+	\item Zoltán Pödör, Bálint Kiss, György Csóka, László Jereb\\
+Possible climatic correlation of individual great buttefly species catch data -- examinal methodology and preliminary results\\
+University of West Hungary, Faculty of Forestry, Faculty Scientific Conference\\
+Sopron, Hungary, 10 December 2013
+	\item Zoltán Pödör, György Csóka, Bálint Kiss\\
+Simple- and Multivariate data analysis of light trap catching data by a systematic window procedure\\
+Decision Support System Workshop and ForestDSS Community of Practice\\
+Lisbon, Portugal, 4-6 December 2013
+\end{itemize}
+}
+\cvitemwithcomment{Conference presentations}{}{
+\begin{itemize}
+	\item Development of data analytic system for forest data in RapidMiner and R environment\\
+XXXII. National Conference of Scientific Students Associations (OTDK)\\
+Szeged, Hungary, 16-18 April 2015
+	\item Development of CReMIT-based data analytic method for processing of forestry time series data\\
+HTE Infokom 2014, 19th HTE Infocommunication Networks and Applications Conference and Exhibition, Student section\\
+Kecskemét, Hungary, 9 October 2014
+	\item Development of data analytic system for forest data in RapidMiner and R environment\\
+University of West Hungary, Simonyi Károly Faculty of Engineering, Wood Sciences and Applied Arts, Faculty Conference of Scientific Students Associations (TDK)\\
+Sopron, Hungary, 24 April 2014
+\end{itemize}
+}
+\cvitemwithcomment{Research/projects}{}{
+\begin{itemize}
+	\item 25294/207 TÁMOP-4.2.2.C-11/1/KONV-2012-0015 „Scientific processing of Earth-system data and socialization of knowledge with the help of modern IT resources”
+\end{itemize}
+}
+\cvitemwithcomment{Awards, honors}{}{
+\begin{itemize}
+	\item Earned II. place for presented research paper at University of West Hungary Faculty Conference of Scientific Students Associations (TDK)
+\end{itemize}
+}
+\cvitemwithcomment{Memberships}{}{
+\begin{itemize}
+	\item Richter Réz Géza College for Advanced Studies (2013 - 2015)
+\end{itemize}
+}
+
+\clearpage
+
+\end{document}

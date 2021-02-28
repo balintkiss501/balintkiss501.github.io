@@ -1,0 +1,401 @@
+<!DOCTYPE HTML>
+<!--
+Prologue by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Jekyll integration by Chris Bobbe | chrisbobbe.github.io
+-->
+<html><head><!-- Robots -->
+  <meta name="robots" content="index, follow" /><link rel="canonical" href="https://balintkissdev.github.io/faq" /><!-- Title, description, author --><title>FAQ | Bálint Kiss - Software Developer</title>
+  <meta name="description" content="Formally educated software developer and software technology enthusiast knowledgeable in modern C++." />
+  <meta name="author" content="Bálint Kiss" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="FAQ | Bálint Kiss - Software Developer" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://balintkissdev.github.io/assets/images/avatar.jpg" />
+  <meta property="og:url" content="https://balintkissdev.github.io/faq" />
+  <meta property="og:site_name" content="Bálint Kiss" />
+  <meta property="og:description" content="Formally educated software developer and software technology enthusiast knowledgeable in modern C++." />
+  
+  <!-- Styles -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js" defer></script><![endif]-->
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+  <!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" defer></script>
+  <script src="/assets/js/jquery.scrolly.min.js" defer></script>
+  <script src="/assets/js/jquery.scrollzer.min.js" defer></script>
+  <script src="/assets/js/skel.min.js" defer></script>
+  <script src="/assets/js/util.js" defer></script>
+  <!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js" defer></script><![endif]-->
+  <script src="/assets/js/main.js" defer></script>
+
+</head><body><style>
+#backToTopButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#backToTopButton:hover {
+  background-color: #555;
+}
+</style>
+<button onclick="topButtonAction()" id="backToTopButton" title="Go back to the top">Back to top</button>
+<script>
+window.onscroll = function() {
+    topButtonScroll()
+};
+
+function topButtonScroll() {
+    var topButtonDisplay;
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        topButtonDisplay = "block";
+    } else {
+        topButtonDisplay = "none";
+    }
+    document.getElementById("backToTopButton").style.display = topButtonDisplay;
+}
+
+function topButtonAction() {
+    document.location = "#top";
+    return false;
+}
+</script>
+<!-- Header -->
+<div id="header">
+  <div class="top"><!-- Logo -->
+<div id="logo">
+  <a href="https://balintkissdev.github.io/" id="home-link">
+    <h1 id="title">Bálint Kiss</h1>
+  </a>
+  <a href="/misc/quotes">
+    <!-- Random quotes -->
+    <script type="text/javascript">
+      var quotes = [
+        
+        {
+          quote: "If you don't like template metaprogramming, we can't be friends.",
+          author: "Me"
+        }
+        ,
+        
+        {
+          quote: "When an airplane is about to crash, the pilot won't be helped by a message saying &ldquo;Assertion failed at line 105&ldquo;.",
+          author: "Dr. Zoltán Porkoláb, Associate Professor at ELTE University"
+        }
+        ,
+        
+        {
+          quote: "Did I tell you about the difference between hash tables and red-black trees?",
+          author: "Me, when I'm about to tell the difference between hash tables and red-black trees for the <i>n</i>th time"
+        }
+        ,
+        
+        {
+          quote: "There Ain’t No Such Thing as a Free Lunch",
+          author: "Walter Morrow"
+        }
+        ,
+        
+        {
+          quote: "The wonderful thing about standards is that there are so many of them to choose from.",
+          author: "Grace Murray Hopper"
+        }
+        ,
+        
+        {
+          quote: "If the designers of X Windows built cars, there would be no fewer than five steering wheels hidden about the cockpit, none of which followed the same principles – but you’d be able to shift gears with your car stereo. Useful feature that.",
+          author: "Marcus J. Ranum, DEC"
+        }
+        ,
+        
+        {
+          quote: "Programming X Windows is like trying to find the square root of Pi using roman numerals.",
+          author: "Unknown"
+        }
+        ,
+        
+        {
+          quote: "I have always wished for my computer to be as easy to use as my telephone; my wish has come true because I can no longer figure out how to use my telephone.",
+          author: "Bjarne Stroutstup, Inventor of C++, regarding the frustrating attempt to use a &ldquo;feature-rich&ldquo; telephone sometime around 1990"
+        }
+        ,
+        
+        {
+          quote: "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.",
+          author: "Martin Golding"
+        }
+        ,
+        
+        {
+          quote: "Hey! It compiles! Ship it!",
+          author: "Unknown"
+        }
+        ,
+        
+        {
+          quote: "The best thing about a boolean is even if you are wrong, you are only off by a bit.",
+          author: "Unknown"
+        }
+        ,
+        
+        {
+          quote: "It´s okay to figure out murder mysteries, but you shouldn´t need to figure out code. You should be able to read it.",
+          author: "Steve McConnell"
+        }
+        ,
+        
+        {
+          quote: "Furthermore, the fact that Boost libraries (available at boost.org) are cross-platform, open source, and available under a license designed to be palatable to even the most paranoid corporate legal team means that code using Boost libraries is nearly as portable as code relying on the standard library.",
+          author: "Scott Meyers"
+        }
+        ,
+        
+        {
+          quote: "No news means good news.",
+          author: "Unknown, regarding the topic of using C++11 smart pointers and make_shared<>() and make_unique<>()"
+        }
+        ,
+        
+        {
+          quote: "Whenever anything goes wrong, I always blame Microsoft.",
+          author: "Unknown"
+        }
+        ,
+        
+        {
+          quote: "If builders built things the way programmers wrote programs, then the first woodpecker that came along would destroy civilization.",
+          author: "Gerald Weinberg"
+        }
+        ,
+        
+        {
+          quote: "If I hear from someone that smart pointers use garbage collector one more time...",
+          author: "Me, when I hear from someone that smart pointers use garbage collector one more time"
+        }
+        ,
+        
+        {
+          quote: "One man's constant is another man's variable.",
+          author: "Alan Perlis"
+        }
+        ,
+        
+        {
+          quote: "Too much syntax sugar causes cancer to the semicolon.",
+          author: "Alan Perlis"
+        }
+        ,
+        
+        {
+          quote: "Just because the standard provides a cliff in front of you, you are not necessarily required to jump off it.",
+          author: "Norman Diamond"
+        }
+        ,
+        
+        {
+          quote: "Sliced bread is good; sliced objects aren't.",
+          author: "Andrei Alexandrescu and Herb Sutter, C++ Coding Standards: 101 Rules, Guidelines, and Best Practices"
+        }
+        ,
+        
+        {
+          quote: "No programming technique solves all problems.<br /> No programming language produces correct results.<br /> No programmer should start each project from scratch.",
+          author: "Axel-Tobias Schreiner, Object-Oriented Programming with ANSI C"
+        }
+        ,
+        
+        {
+          quote: "Programming is not a zero-sum game. Teaching something to a fellow programmer doesn't take it away from you. I'm happy to share what I can, because I'm in it for the love of programming.",
+          author: "John Carmack"
+        }
+        ,
+        
+        {
+          quote: "An investment in knowledge always pays the best interest.",
+          author: "Benjamin Franklin"
+        }
+        ,
+        
+        {
+          quote: "Every man and woman should play the noblest of games and be of another mind from what they are at present.",
+          author: "Plato"
+        }
+        ,
+        
+        {
+          quote: "All software becomes legacy as soon as it's written",
+          author: "Andrew Hunt, The Pragmatic Programmer: From Journeyman to Master"
+        }
+        ,
+        
+        {
+          quote: "When you find dead code, do the right thing. Give a decent burial.",
+          author: "Robert C. Martin, Clean Code: A Handbook of Agile Software Craftsmanship"
+        }
+        ,
+        
+        {
+          quote: "Before beginning, plan carefully.",
+          author: "Marcus Tullius Cicero"
+        }
+        ,
+        
+        {
+          quote: "Hollywood thinks that computers run on black magic and hackers are wizards.",
+          author: "Unknown"
+        }
+        ,
+        
+        {
+          quote: "Works for me, works for you, works during development and QA, but blows up in your most important customer’s face.",
+          author: "Scott Meyer's definition of Undefined Behavior in C++"
+        }
+        ,
+        
+        {
+          quote: "An application that monitors the memory usage and has a memory leak is a bit sad.",
+          author: "Mastering Qt"
+        }
+        ,
+        
+        {
+          quote: "The people telling you to get a real job are generally upset that they are stuck in jobs they hate and can't make money from what they love",
+          author: "Unknown"
+        }
+        ,
+        
+        {
+          quote: "You don't get rewarded for hard work at your job, only for results.",
+          author: "Unknown"
+        }
+        ,
+        
+        {
+          quote: "If you do what you love, and do it as well as you can, good things will eventually come of it. Not necessarily quickly or easily, but if you stick with it, they will come.",
+          author: "Michael Abrash"
+        }
+        
+        
+      ];
+      var random = Math.floor(Math.random() * quotes.length);
+      var randomQuote = quotes[random];
+
+      document.write('<p>&ldquo;' + randomQuote.quote + '&ldquo;</p>');
+      document.write('<p>&mdash; ' + randomQuote.author + '</p>');
+    </script>
+  </a>
+</div>
+<!-- Social Icons -->
+<ul class="icons"><li><a target=_blank href="https://www.linkedin.com/in/balintkissdev" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li><li><a target=_blank href="https://github.com/balintkissdev" class="icon fa-github"><span class="label">GitHub</span></a></li><li><a href="mailto:balintkissdev@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li></ul>
+<!-- Nav -->
+<nav id="nav">
+  <ul><li><a href="https://balintkissdev.github.io/" id="home-sweet-home-link">
+            <span class="icon fa-home">Home, sweet home</span>
+          </a></li><li><a href="https://balintkissdev.github.io/projects" id="side-projects-link">
+            <span class="icon fa-rocket">Side projects</span>
+          </a></li><li><a href="#" id="faq" class="active">
+            <span class="icon none">FAQ</span>
+          </a></li><li><a href="https://balintkissdev.github.io/misc/readables" id="technical-books-and-readables-i-ve-read-link">
+            <span class="icon none">Technical books and readables I've read</span>
+          </a></li></ul>
+</nav></div>
+  <div class="bottom">
+  </div>
+</div><!-- Main -->
+<div id="main">
+	<!-- Page -->
+	<article class="shade-two">
+	  <div class="container">
+			<header>
+				<h2>FAQ</h2></header><h2 id="what-is-your-advice-on-learning-c">What is your advice on learning C++?</h2>
+
+<p>I once wrote an answer on a <a href="https://www.reddit.com/r/learnprogramming/comments/958imi/fledgling_c_student_looking_for_best_textbooks/e3rimis">Reddit post</a>
+about a question like this.</p>
+
+<blockquote>
+  <p>It’s hard for me to recommend beginner C++ books, because what I did is transition from a different high-level language (Java) to C++. The usual de facto C++ beginner book that is usually recommended is <a href="https://www.amazon.com/Primer-5th-Stanley-B-Lippman/dp/0321714113">C++ Primer</a> (not to be confused with C++ Primer Plus, which is by a different author and is considered inferior). However, I did not finish the whole book, and quickly got bored of it.</p>
+
+  <p>What I did is read the whole <a href="https://isocpp.org/faq">C++ FAQ</a> and then just simply start hacking on simple pet projects like a small HTTP server using Boost.Asio. Then I attended a university course about C++11 and then started reading intermediate books like the Scott Meyers series. Keep in mind, that this approach does not work for everyone.</p>
+
+  <p>My recommendation is this:</p>
+
+  <ol>
+    <li>
+      <p>Start reading and coding along to <a href="https://www.amazon.com/Tour-2nd-Depth-Bjarne-Stroustrup/dp/0134997832">A Tour of C++</a> by none other than the creator of C++ itself, Bjarne Stroustrup.</p>
+    </li>
+    <li>
+      <p>Read the <a href="https://isocpp.org/faq">C++ FAQ</a></p>
+    </li>
+    <li>
+      <p>Practice with your initial knowledge on a side project of yours that you like. You can find ideas here: <a href="https://github.com/karan/Projects">https://github.com/karan/Projects</a></p>
+    </li>
+  </ol>
+
+  <p>After that, read through Scott Meyer’s Effective C++, More Effective C++, Modern Effective C++ and Effective STL. Congratulations, now you know C++! Not. Because this language has many domains (the C subset, OOP, templates, STL, C++11’s new stuff, etc.) and nobody knows all of them, people usually specialize.</p>
+</blockquote>
+
+<p>What I would suggest is learn the basics of C++ first from <a href="https://www.amazon.com/Tour-2nd-Depth-Bjarne-Stroustrup/dp/0134997832">A Tour of C++</a>,
+then read the <a href="https://isocpp.org/faq">C++ FAQ</a>, create small programming projects and read through Scott Meyer’s Effective C++ series.</p>
+
+<p>If you want to see more recommended C++ books, take a look at <a href="https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list">The Definitive C++ Book Guide and List</a>.</p>
+
+<p>If you come from a different programming language, then these are the concepts that you should get yourself
+familiar with first:</p>
+
+<ul>
+  <li>Difference between the compiler and linker</li>
+  <li>Pointers and references</li>
+  <li>Difference between stack and heap memory</li>
+  <li>Importance of <code class="language-plaintext highlighter-rouge">const</code> references as function parameters from performance and safety viewpoints</li>
+  <li>Constructors, destructors, copy constructor and copy assignment operators</li>
+  <li>Difference between member initializer list and constructor body from performance viewpoint</li>
+</ul>
+
+<p>Final tips while using C++ for the first time:</p>
+<ul>
+  <li>Do not abuse inheritance chains. Think of the maintanability nightmare of
+modifying base classes and learn about the performance overhead of pointer
+indirection. Whenever I see people making this mistake I always cite
+<a href="https://www.codeofhonor.com/blog/tough-times-on-the-road-to-starcraft">this article about the making of Starcraft</a>
+on how the development team struggled with long inheritance chains when they
+first started using C++. Prefer composition over inheritance and don’t have more than 1-2 base classes.</li>
+  <li>Best way to learn is making a small project. You learn how to structure your files in your project,
+see the language in action and
+forces you to Google the problems whenever you get into roadblocks.</li>
+  <li>The challenge of learning a new language is not about the syntax. It’s about
+learning the culture and the paradigms of the language.</li>
+</ul>
+</div>
+	</article>
+</div>
+<!-- Footer -->
+<div id="footer">
+  
+  <!-- Copyright -->
+  <ul class="copyright">
+    
+      <li>&copy;Bálint Kiss. All rights reserved.</li>
+    
+    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    <li>Jekyll integration: <a href="https://chrisbobbe.github.io/">Chris Bobbe</a></li>
+  </ul>
+  
+</div></body>
+</html>

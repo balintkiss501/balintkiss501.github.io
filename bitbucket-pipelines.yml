@@ -1,0 +1,35 @@
+# This is a sample build configuration for Ruby.
+# Check our guides at https://confluence.atlassian.com/x/8r-5Mw for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: ruby:latest
+
+pipelines:
+  default:
+    - step:
+        caches:
+          - bundler
+        script: # Modify the commands below to build your repository.
+          - gem install bundler -v '~> 1.12'
+          - bundle _1.17.3_ install
+          - bundle exec _1.17.3_ jekyll build
+  branches:
+    master:
+      - step:
+          script:
+            - gem install bundler -v '~> 1.12'
+            - bundle _1.17.3_ install
+            - bundle _1.17.3_ exec jekyll build
+            - cd _site
+            - git config --global user.email "balintkissdev@gmail.com"
+            - git config --global user.name "balintkissdev"
+            - git init
+            - git remote add origin https://github.com/balintkissdev/balintkissdev.github.io.git
+            - git add --all
+            - git commit -m "Deployed by CI/CD from private repo at `date`."
+            - git push --force https://$GITHUB_TOKEN@github.com/balintkissdev/balintkissdev.github.io.git master
+definitions:
+  caches:
+    bundler: ./vendor
+
